@@ -38,7 +38,7 @@ struct ContentView: View {
                 .scaledToFit()
                 .frame(height: 200)
                 .saturation(amount)
-                .blur(radius: (1 - amount))
+                .blur(radius: (1 - amount) * 7)
             
             Slider(value: $amount)
                 .padding()
